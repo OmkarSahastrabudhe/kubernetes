@@ -1,17 +1,16 @@
-apiVersion : v1
+apiVersion: v1
 kind: Pod
-metaData: 
-  name: Pod-exe
+metadata:
+  name: pod-exe
   labels:
-     app: myapp
-
-specs:
+    app: myapp
+spec:
   containers:
-   - name: my-pod
-     image: nginx
-     ports: 
-       - containerPort: 80
-         
+    - name: my-pod
+      image: nginx
+      ports:
+        - containerPort: 80
+
 
 
 
