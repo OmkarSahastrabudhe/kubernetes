@@ -1,0 +1,17 @@
+apiVersion : v1
+kind: Pod
+metaData: 
+  name: Pod-exe
+  labels:
+     app: myapp
+
+specs:
+  containers:
+   - name: my-pod
+     image: nginx
+     ports: 
+       - containerPort: 80
+         
+
+
+
