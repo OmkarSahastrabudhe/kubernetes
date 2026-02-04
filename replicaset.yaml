@@ -2,14 +2,12 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata: 
    name: my-rc
-   labels: 
-      app: my-rco
+   
 
 spec: 
    replicas: 3
    selector: 
       app: my-rco
-
    template: 
        metadata:
           labels:
