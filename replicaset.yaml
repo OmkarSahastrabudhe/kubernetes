@@ -1,23 +1,25 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata: 
-   name: my-rc
-   
+  name: my-rc
 
 spec: 
-   replicas: 3
-   selector: 
+  replicas: 3
+  selector: 
+    matchLabels: 
       app: my-rco
-   template: 
-       metadata:
-          labels:
-            app: my-rco
-       spec:
-           containers:
-               - name: my-container
-                 image: nginx
-                 ports: 
-                    - containerPort: 80
+  template: 
+    metadata:
+      labels:
+        app: my-rco
+    spec:
+      containers:
+      - name: my-container
+        image: nginx
+        ports: 
+        - containerPort: 80
+
+
 ---
 
 apiVersion: v1
