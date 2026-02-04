@@ -4,7 +4,7 @@ metadata:
    name: statefulsvc
    
 spec:
-   type: None
+   type: NodePort
    selector:
        app: my-apps
    ports:
