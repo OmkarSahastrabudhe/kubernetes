@@ -4,13 +4,13 @@ metadata:
    name: statefulsvc
    
 spec:
+   type: None
    selector:
        app: my-apps
    ports:
        - port: 80
          targetPort: 3306
-   clusterIp: None
-
+   
 ---
 
 apiVersion: apps/v1
